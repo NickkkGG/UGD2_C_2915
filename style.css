@@ -7,13 +7,65 @@
 nav {
     display: flex;
     width: 100%;
-    padding: 30px;
+    padding: 13px;
     justify-content: space-between;
-    background-color: bisque;
-    position: fixed;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.btn-contact {
+    background-color: aliceblue;
+    color: black;
+    border-radius: 20px;
+    padding: 10px;
+
 }
 
 .opsi_menu_kanan {
     display:flex;
-    gap: 45px;
+    gap: 30px;
+    list-style: none;
+}
+
+.gambar_logo {
+    width: 50px;
+    object-fit: contain;
+}
+
+#home {
+    background-color: rgb(7, 7, 7);
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+    background-size: 40px 40px;
+    min-height: 100vh;
+    padding-top: 80px; /* kalau navbar fixed */
+}
+
+.nama {
+    font-size: 48px;
+    font-weight: 800;
+    text-transform: uppercase;
+    
+    background: linear-gradient(
+        135deg, 
+        #c0c0c0 0%,    
+        #ffffff 50px,  
+        #808080 70%,  
+        #404040 100%  
+    );
+    
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
