@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    padding: 30px;
+    justify-content: space-between;
+    background-color: bisque;
+    position: fixed;
+}
+
+.opsi_menu_kanan {
+    display:flex;
+    gap: 45px;
+}
