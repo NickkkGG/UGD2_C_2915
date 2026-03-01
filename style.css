@@ -6,6 +6,7 @@
 
 nav {
     display: flex;
+    position: fixed;
     width: 100%;
     padding: 13px;
     justify-content: space-between;
@@ -37,35 +38,104 @@ nav a {
 .gambar_logo {
     width: 50px;
     object-fit: contain;
+    filter:drop-shadow(1px 1px 5px rgba(255, 255, 255, 0.563))
+}
+
+
+body {
+    scroll-padding-top: 73px;
+    overflow: hidden;
+    height: 100%;
 }
 
 #home {
-    background-color: rgb(7, 7, 7);
+    background-color: rgb(0, 0, 0);
     background-image: 
         linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
-    background-size: 40px 40px;
-    min-height: 100vh;
-    padding-top: 80px; /* kalau navbar fixed */
+        linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0.1px, transparent 1px);
+    background-size: 60px 60px;
+    min-height: 160vh;
+    padding-top: 100px; 
+    justify-content: space-between;
+    display: flex;
 }
 
-.nama {
-    font-size: 48px;
-    font-weight: 800;
-    text-transform: uppercase;
-    
-    background: linear-gradient(
-        135deg, 
-        #c0c0c0 0%,    
-        #ffffff 50px,  
-        #808080 70%,  
-        #404040 100%  
-    );
-    
+.foto_saya img {
+    width: 640px;
+    height: auto;
+    object-fit: cover;
+}
 
+.hello{
+    font-family: 'Space Mono', monospace;
+    margin-top: 80px;
+    margin-left: 150px;
+    font-size: 25px;
+    text-transform: uppercase;
+    background: linear-gradient(
+        105deg, 
+        #c0c0c0 0%,    
+        #ffffffdd 20px,  
+        #6f6f6f00 90%,  
+        #303030a3 100%  
+    );
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    
     text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.nama {
+    font-family: 'Space Mono', monospace;
+    margin-left: 150px;
+    font-size: 100px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(
+        325deg, 
+        #c0c0c0 0%,    
+        #ffffff 80px,  
+        #6f6f6f 90%,  
+        #303030 100%  
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;    
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.deskripsi_saya {
+    font-family: 'Space Mono', monospace;
+    margin-top: 10px;
+    margin-left: 150px;
+    font-size: 15px;
+    text-transform: uppercase;
+    background: linear-gradient(
+        105deg, 
+        #c0c0c0 0%,    
+        #ffffff 80px,  
+        #6f6f6f 90%,  
+        #303030 100%  
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.fa-brands fa-x-twitter {
+    background-color: #ffffff;
+}
+
+#about {
+    background-color: rgb(0, 0, 0);
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0.1px, transparent 1px);
+    background-size: 60px 60px;
+    min-height: 160vh;
+    padding-top: 100px; 
+    justify-content: space-between;
+    display: flex;
+    color: white;
 }
