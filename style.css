@@ -90,11 +90,12 @@
         height: auto;
         object-fit: cover;
         margin-right: 80px;
+        margin-top: 76px;
     }
 
     .hello{
         font-family: 'Space Mono', monospace;
-        margin-top: 65px;
+        margin-top: 90px;
         margin-left: 150px;
         font-size: 25px;
         text-transform: uppercase;
@@ -196,10 +197,81 @@
         background-size: 60px 60px;
         min-height: 160vh;
         padding-top: 100px; 
-        justify-content: space-between;
         display: flex;
     }
+
+    .about_me h2 {
+        font-family:'Courier New', Courier, monospace;
+        color: white;
+        padding-top: 250px;
+        padding-left: 120px;
+        font-size: 40px;
+        margin-right: 200px;
+    }
+
+    .about_me p {
+        font-family:'Courier New', Courier, monospace;
+        color: #c0c0c0;
+        padding-top: 25px;
+        padding-left: 120px;
+        font-size: 20px;
+        margin-right: 200px;
+    }
+
+    .who_am_i {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: transparent;
+    padding: 45px;
+    margin-top:130px;
+    margin-bottom: 650px;
+    margin-right: 80px;
+    width: 1111px;
+    color:white;
+    background: rgba(255, 255, 255, 0.05); 
+    backdrop-filter: blur(2px);             
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
     
+}
+
+.who_am_i:hover {
+    scale: calc(0.98);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 
+        -15px 20px 50px rgba(0, 0, 0, 0.6),
+        10px -10px 40px rgba(255, 255, 255, 0.1),
+        0 0 0 2px rgba(255, 255, 255, 0.1) inset;
+}
+
+
+
+    .who_am_i h1 {
+    font-family: 'Space Mono', monospace;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    background: linear-gradient(135deg, #ffffff, #c0c0c0, #a0a0a0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    
+    letter-spacing: 1px;
+}
+
+
+
+.who_am_i p {
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+    line-height: 2;
+    color: #dddddd;
+    margin-bottom: 20px;
+}
+ 
     #skills {
         background-color: rgb(0, 0, 0);
         background-image: 
@@ -211,6 +283,49 @@
         justify-content: space-between;
         display: flex;
     }
+
+    .judul_skills h1 {
+        font-family:'Courier New', Courier, monospace;
+        font-size: 40px;
+        color:white;
+        width: 500px;
+        height: 50px;
+        margin-top: 250px;
+        margin-left: 120px;
+    }
+    
+    .judul_skills p {
+        font-family: 'Courier New', Courier, monospace;
+        color :#c0c0c0;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 120px;
+    }
+
+    .skill_item img {
+        width: 90px;
+        height: 90px;
+        object-fit: contain;
+        border-radius: 15px;
+    }
+
+.skills_container {
+    font-family: 'Courier New', Courier, monospace;
+    color:#ffffff;
+    background-color: rgba(0, 255, 255, 0.146);
+    width: 1444px;
+    height: 580px;
+    margin-top: 25px;
+}
+
+.skill_grid {
+    
+}
+
+
+
+
+
 
     #portofolio {
         background-color: rgb(0, 0, 0);
