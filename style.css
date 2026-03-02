@@ -87,10 +87,10 @@
 
     .foto_saya img {
         width: 640px;
-        height: auto;
+        height: 624px;
         object-fit: cover;
         margin-right: 80px;
-        margin-top: 76px;
+        margin-top: 10px;
     }
 
     .hello{
@@ -203,7 +203,7 @@
     .about_me h2 {
         font-family:'Courier New', Courier, monospace;
         color: white;
-        padding-top: 250px;
+        padding-top: 210px;
         padding-left: 120px;
         font-size: 40px;
         margin-right: 200px;
@@ -222,7 +222,7 @@
     font-family: 'Courier New', Courier, monospace;
     background-color: transparent;
     padding: 45px;
-    margin-top:130px;
+    margin-top:80px;
     margin-bottom: 650px;
     margin-right: 80px;
     width: 1111px;
@@ -290,7 +290,7 @@
         color:white;
         width: 500px;
         height: 50px;
-        margin-top: 250px;
+        margin-top: 210px;
         margin-left: 120px;
     }
     
@@ -300,32 +300,115 @@
         font-size: 20px;
         margin-top: 20px;
         margin-left: 120px;
+        padding-right: 100px;
     }
 
     .skill_item img {
-        width: 90px;
-        height: 90px;
-        object-fit: contain;
+        width: 60px;
+        height: 60px;
         border-radius: 15px;
     }
+
+    .skill_item {
+        background-color: transparent;
+        background: rgba(255, 255, 255, 0.05); 
+        backdrop-filter: blur(2px);             
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        transition: all 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+        border-radius: 20px;
+        width: 120px;
+        height: 120px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 1px;
+    }
+
+    .skill_item p {
+        margin-top: 20px;
+    }
+
+    .skill_usingnow h1 {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+        padding-top: 15px;
+        padding-bottom: 25px;
+    }
+
+    .skill_learning {
+        margin-top: 45px;
+    }
+
+    .skill_itemm img {
+        width: 60px;
+        height: 60px;
+        border-radius: 15px;
+    }
+
+    .skill_itemm {
+        background-color: transparent;
+        background: rgba(255, 255, 255, 0.05); 
+        backdrop-filter: blur(2px);             
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        transition: all 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+        border-radius: 20px;
+        width: 120px;
+        height: 120px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .skill_itemm p {
+        margin-top: 20px;
+    }
+
 
 .skills_container {
     font-family: 'Courier New', Courier, monospace;
     color:#ffffff;
-    background-color: rgba(0, 255, 255, 0.146);
     width: 1444px;
     height: 580px;
     margin-top: 25px;
 }
 
 .skill_grid {
-    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+
 }
 
+.skill_usingnow h1 {
+    font-family: 'Space Mono', monospace;
+    font-size: 30px;
+}
 
+.skill_item:hover {
+    scale: calc(0.98);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 
+        -15px 20px 50px rgba(0, 0, 0, 0.6),
+        10px -10px 40px rgba(255, 255, 255, 0.1),
+        0 0 0 2px rgba(255, 255, 255, 0.1) inset;
+}
 
-
-
+.skill_itemm:hover {
+    scale: calc(0.98);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 
+        -15px 20px 50px rgba(0, 0, 0, 0.6),
+        10px -10px 40px rgba(255, 255, 255, 0.1),
+        0 0 0 2px rgba(255, 255, 255, 0.1) inset;
+}
 
     #portofolio {
         background-color: rgb(0, 0, 0);
@@ -339,6 +422,117 @@
         display: flex;
     }
 
+    .judul_portofolio h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    padding-top: 200px;
+    padding-left: 120px;
+    font-size: 40px;
+    margin-right: 200px;
+}
+
+.judul_portofolio p {
+    font-family: 'Courier New', Courier, monospace;
+    color: #c0c0c0;
+    padding-top: 25px;
+    padding-left: 120px;
+    font-size: 20px;
+    margin-right: 200px;
+}
+
+
+.judul_project {
+    margin-top: 10px;
+    margin-right: 80px;
+}
+
+.gridcard_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 650px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.project_card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 0.3s ease;
+    align-items: flex-start;
+    min-width: 0;
+}
+
+.judul_project h1 {
+    font-family: 'Space Mono', monospace;
+    color: white;
+    font-size: 30px;
+    grid-column: 1 / -1;
+    height: fit-content;
+    margin-left: 40px;
+}
+
+.project_card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.project_card:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.judul_project img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.judul_project h3 {
+    color: white;
+    font-family: 'Space Mono', monospace;
+}
+
+.judul_project p {
+    color: #c0c0c0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+}
+
+.judul_project a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    width: fit-content;
+    transition: all 0.3s ease;
+}
+
+.judul_project a:hover {
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 0 10px white;
+}
+
+.project_card .live-code {
+    display: flex;
+    gap: 10px;
+}
+
+
     #contact {
         background-color: rgb(0, 0, 0);
         background-image: 
@@ -350,4 +544,93 @@
         justify-content: space-between;
         display: flex;
     }
+
+    .judul_contact h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    padding-top: 200px;
+    padding-left: 120px;
+    font-size: 40px;
+    margin-right: 200px;
+}
+
+.judul_contact p {
+    font-family: 'Courier New', Courier, monospace;
+    color: #c0c0c0;
+    padding-top: 25px;
+    padding-left: 120px;
+    font-size: 20px;
+    margin-right: 200px;
+}
+
+.send_message {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 45px;
+    margin-top: 50px;
+    margin-bottom: 650px;
+    margin-right: 150px;
+    width: 800px;
+    color: white;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(2px);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.send_message h1 {
+    font-family: 'Space Mono', monospace;
+    font-size: 28px;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #ffffff, #c0c0c0, #a0a0a0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.send_message input,
+.send_message textarea {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 12px 15px;
+    color: white;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.send_message input:focus,
+.send_message textarea:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.send_message textarea {
+    height: 120px;
+    resize: none;
+}
+
+.submit {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 12px;
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.submit:hover {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
 
