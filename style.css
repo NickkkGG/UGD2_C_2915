@@ -1,141 +1,238 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-nav {
-    display: flex;
-    position: fixed;
-    width: 100%;
-    padding: 13px;
-    justify-content: space-between;
-    background-color: rgb(0, 0, 0);
-    align-items: center;
-}
+    nav {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        padding: 13px;
+        justify-content: space-between;
+        background-color: rgb(0, 0, 0);
+        align-items: center;
+    }
 
-nav a {
-    text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(255, 255, 255);
-    padding: 10px;
-}
+    nav a {
+        text-decoration: none;
+        font-family: 'Courier New', Courier, monospace;
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        border-radius: 20px;
+    }
 
-.btn-contact {
-    background-color: aliceblue;
-    color: black;
-    border-radius: 20px;
-    padding: 10px;
+    .btn-contact {
+        background-color: aliceblue;
+        color: black;
+        border-radius: 20px;
+        padding: 10px;
+        transition: all 0.3s ease;
+    }
 
-}
+    .btn-contact:hover {
+        box-shadow: 0 0 15px rgb(255, 255, 255);
+        background-color: transparent;
+        color: white;
 
-.opsi_menu_kanan {
-    display:flex;
-    gap: 30px;
-    list-style: none;
-}
+    }
 
-.gambar_logo {
+    .about:hover, .skills:hover, .portofolio:hover {
+        background-color: transparent;
+        box-shadow: 0 0 15px white;
+        transition: 0.4s ease;
+    }
+
+    .opsi_menu_kanan {
+        display:flex;
+        gap: 30px;
+        list-style: none;
+    }
+
+    .gambar_logo {
     width: 50px;
     object-fit: contain;
-    filter:drop-shadow(1px 1px 5px rgba(255, 255, 255, 0.563))
+    transition: all 0.4s ease;
+    border-radius: 100px;
+}
+
+.gambar_logo:hover {
+    transform: scale(0.89);
+    padding: 3px;
+    background-color: transparent;
+    box-shadow: 0 0 15px white;
 }
 
 
-body {
-    scroll-padding-top: 73px;
-    overflow: hidden;
-    height: 100%;
-}
 
-#home {
-    background-color: rgb(0, 0, 0);
-    background-image: 
-        linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0.1px, transparent 1px);
-    background-size: 60px 60px;
-    min-height: 160vh;
-    padding-top: 100px; 
-    justify-content: space-between;
-    display: flex;
-}
 
-.foto_saya img {
-    width: 640px;
-    height: auto;
-    object-fit: cover;
-}
+    body {
+        scroll-padding-top: 73px;
+        overflow: hidden;
+        height: 100%;
+    }
 
-.hello{
-    font-family: 'Space Mono', monospace;
-    margin-top: 80px;
-    margin-left: 150px;
-    font-size: 25px;
-    text-transform: uppercase;
-    background: linear-gradient(
-        105deg, 
-        #c0c0c0 0%,    
-        #ffffffdd 20px,  
-        #6f6f6f00 90%,  
-        #303030a3 100%  
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-}
 
-.nama {
-    font-family: 'Space Mono', monospace;
-    margin-left: 150px;
-    font-size: 100px;
-    font-weight: 800;
-    text-transform: uppercase;
-    background: linear-gradient(
-        325deg, 
-        #c0c0c0 0%,    
-        #ffffff 80px,  
-        #6f6f6f 90%,  
-        #303030 100%  
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;    
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-}
+    #home {
+        background-color: rgb(0, 0, 0);
+        background-image:
+            linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0.1px, transparent 1px);
+        background-size: 60px 60px;
+        min-height: 160vh;
+        padding-top: 100px; 
+        justify-content: space-between;
+        display: flex;
+    }
 
-.deskripsi_saya {
-    font-family: 'Space Mono', monospace;
-    margin-top: 10px;
-    margin-left: 150px;
-    font-size: 15px;
-    text-transform: uppercase;
-    background: linear-gradient(
-        105deg, 
-        #c0c0c0 0%,    
-        #ffffff 80px,  
-        #6f6f6f 90%,  
-        #303030 100%  
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-}
+    .foto_saya img {
+        width: 640px;
+        height: auto;
+        object-fit: cover;
+        margin-right: 80px;
+    }
 
-.fa-brands fa-x-twitter {
-    background-color: #ffffff;
-}
+    .hello{
+        font-family: 'Space Mono', monospace;
+        margin-top: 65px;
+        margin-left: 150px;
+        font-size: 25px;
+        text-transform: uppercase;
+        background: white;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
 
-#about {
-    background-color: rgb(0, 0, 0);
-    background-image: 
-        linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0.1px, transparent 1px);
-    background-size: 60px 60px;
-    min-height: 160vh;
-    padding-top: 100px; 
-    justify-content: space-between;
-    display: flex;
-    color: white;
-}
+    .nama {
+        font-family: 'Space Mono', monospace;
+        margin-left: 150px;
+        font-size: 100px;
+        font-weight: 800;
+        text-transform: uppercase;
+        background: linear-gradient(
+            654deg, 
+            #c0c0c0 0%,    
+            #ffffff 40px,  
+            #ababab 80%,  
+            #565656 100%  
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;    
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .deskripsi_saya {
+        font-family: 'Space Mono', monospace;
+        margin-top: 10px;
+        margin-left: 150px;
+        font-size: 15px;
+        text-transform: uppercase;
+        background: white; 
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .link_profil {
+        display: flex;
+        margin-top: 60px;
+        gap:30px;
+        width: fit-content;
+        margin-left: 150px;
+    }
+
+    .twitter, .github, .linkedin {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(239, 239, 239);
+        border-radius: 15px;
+        padding: 15px;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        overflow: hidden;
+        transition: all 0.4s ease;
+    }
+
+    .twitter span, .github span, .linkedin span {
+        width: 0;
+        overflow: hidden;
+        transition: all 0.4s ease;
+        padding-left: 0px;
+    }
+
+    .twitter:hover, .github:hover, .linkedin:hover {
+        box-shadow: 0 0 20px hsl(0, 0%, 0%), 0 0 25px rgb(255, 255, 255);
+    }
+
+
+    .twitter:hover span {
+        width: 65px;
+        padding-left: 6px;
+    }
+
+    .github:hover span {
+        width: 65px;
+        padding-left: 6px;
+    }
+
+    .linkedin:hover span {
+        width: 77px;
+        padding-left: 6px;
+        
+    }
+
+
+    #about {
+        background-color: rgb(0, 0, 0);
+        background-image: 
+            linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0.1px, transparent 1px);
+        background-size: 60px 60px;
+        min-height: 160vh;
+        padding-top: 100px; 
+        justify-content: space-between;
+        display: flex;
+    }
+    
+    #skills {
+        background-color: rgb(0, 0, 0);
+        background-image: 
+            linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0.1px, transparent 1px);
+        background-size: 60px 60px;
+        min-height: 160vh;
+        padding-top: 100px; 
+        justify-content: space-between;
+        display: flex;
+    }
+
+    #portofolio {
+        background-color: rgb(0, 0, 0);
+        background-image: 
+            linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0.1px, transparent 1px);
+        background-size: 60px 60px;
+        min-height: 160vh;
+        padding-top: 100px; 
+        justify-content: space-between;
+        display: flex;
+    }
+
+    #contact {
+        background-color: rgb(0, 0, 0);
+        background-image: 
+            linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0.1px, transparent 1px);
+        background-size: 60px 60px;
+        min-height: 160vh;
+        padding-top: 100px; 
+        justify-content: space-between;
+        display: flex;
+    }
+
